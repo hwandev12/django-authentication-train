@@ -1,0 +1,11 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-control w-50 mx-auto">
+            {{ form }}
+        <button class="btn btn-primary mt-3" type="submit">Create</button>
+        </div>
+    </form>
+{% endblock content %}
